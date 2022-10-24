@@ -208,8 +208,6 @@ public class TestDataImporter {
         );
     }
 
-//    private static final List<Product> PRODUCTS =
-
     public void importData(SessionFactory sessionFactory) {
         @Cleanup Session session = sessionFactory.openSession();
         saveCustomerAndPersonalInfo(session, getIsobelle(), getIsobellePersonalInfo(), getIsobelleOrders());

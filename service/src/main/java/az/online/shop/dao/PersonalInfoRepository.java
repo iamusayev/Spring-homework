@@ -10,5 +10,4 @@ public class PersonalInfoRepository extends RepositoryBase<Integer, PersonalInfo
     public PersonalInfoRepository(EntityManager entityManager) {
         super(PersonalInfo.class, entityManager);
     }
-
 }

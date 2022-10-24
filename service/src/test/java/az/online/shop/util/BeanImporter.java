@@ -52,5 +52,4 @@ public class BeanImporter {
     public static PersonalInfoService getPersonalInfoService() {
         return context.getBean(PersonalInfoService.class);
     }
-
 }

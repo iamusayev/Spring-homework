@@ -11,8 +11,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class CustomerRepository extends RepositoryBase<Integer, Customer> {
 
-
-
     public CustomerRepository(EntityManager entityManager) {
         super(Customer.class, entityManager);
     }

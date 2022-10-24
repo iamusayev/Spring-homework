@@ -21,12 +21,12 @@ class CustomerRepositoryTest {
     private final CustomerRepository customerRepository = BeanImporter.getCustomerRepository();
 
     @BeforeAll
-    public void initDb() {
+    void initDb() {
         TestDataImporter.importData(BeanImporter.getSessionFactory());
     }
 
     @AfterAll
-    public void finish() {
+    void finish() {
         BeanImporter.getSessionFactory().close();
     }
 
@@ -63,4 +63,3 @@ class CustomerRepositoryTest {
         session.clear();
     }
 }
-

@@ -14,8 +14,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 
 @TestInstance(PER_CLASS)
-@RequiredArgsConstructor
-public class PersonalInfoTest {
+class PersonalInfoTest {
 
     private final PersonalInfoService personalInfoService = BeanImporter.getPersonalInfoService();
 
@@ -25,7 +24,7 @@ public class PersonalInfoTest {
     }
 
     @AfterAll
-    public void finish() {
+    void finish() {
         BeanImporter.getSessionFactory().close();
     }
 

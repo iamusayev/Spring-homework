@@ -17,16 +17,15 @@ import org.junit.jupiter.api.TestInstance;
 @TestInstance(PER_CLASS)
 class PersonalRepositoryTest {
 
-
     private final PersonalInfoRepository personalInfoRepository = BeanImporter.getPersonalInfoRepository();
 
     @BeforeAll
-    public void initDb() {
+    void initDb() {
         TestDataImporter.importData(BeanImporter.getSessionFactory());
     }
 
     @AfterAll
-    public void finish() {
+    void finish() {
         BeanImporter.getSessionFactory().close();
     }
 

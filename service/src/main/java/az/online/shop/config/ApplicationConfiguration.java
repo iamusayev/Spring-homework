@@ -23,4 +23,3 @@ public class ApplicationConfiguration {
         return HibernateUtil.buildSessionFactory();
     }
 }
-
